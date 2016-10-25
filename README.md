@@ -1,6 +1,6 @@
 # estore
 
-E-store under development.
+E-store under development. Hosted in bookit.comuf.com
 
 Please use ms@gmail.com as username and japan as password for Log In page. You can only see Cart page after logging in.
 
