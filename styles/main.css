@@ -1,0 +1,68 @@
+body{ 
+	background : #f2f5f7;
+	margin : 0;
+	font-family	: "Varela Round", Arial;
+	font-size : 13px;
+}
+p{
+	line-height : 1.5;
+	font-size : 100%;
+}
+.left{
+	float : left;	
+}
+#title{
+	font-size: 18px;
+}
+#wrapper{
+	display : grid;
+	grid-template-columns: 1fr 5fr;
+	padding: 0 3%;
+}
+#left{
+	display:grid;
+	grid-template-rows: 1fr 1fr;
+}
+#left #author-label, #left #book-label{
+	font-weight: 400;
+	font-size: 17px;
+}
+#left .author{
+	grid-template-columns: 1fr 4fr;
+	display: grid;
+	padding: 0 0 15px;
+}
+
+#left .author-photo img{
+	width: 32px;
+}
+#left .author-name{
+	align-self: center;
+}
+#top-right{
+	border-bottom: 1px solid #e6eaed;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+#top-right #category-label{
+	font-weight: 400;
+	font-size: 17px;
+}
+#top-right ul{
+    grid-template-columns: repeat(6, 1fr);
+    display: grid;
+}
+#top-right nav li{
+	list-style-type: none;
+	justify-self: center;
+}
+#top-right nav li a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #777f86;
+}
+#top-right nav li a.active{
+	border-bottom: 2px solid #56d0e9;
+	padding-bottom: 24px;
+	color: #000;
+}
