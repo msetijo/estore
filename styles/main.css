@@ -11,8 +11,93 @@ p{
 .left{
 	float : left;	
 }
-#title{
+#top-header{
+	display: grid;
+	grid-template-columns: 0.5fr 3fr 0.22fr;
+	background-color: #fff;
+	padding: 15px 0;
+}
+#top-header #search-box{
+	text-align: right;
+}
+#top-header #search-box button{
+	background: transparent;
+    border: none;
+    color: #888;
+	margin-left: 15%;
+}
+#top-header #search-box input[type=text]{
+	padding: 6px;
+    margin-top: 8px;
+    border: none;
+    background: transparent;
+    width: 130px;
+}
+#top-header #title{
+	font-size: 22px;
+	text-align: center;
+	align-self: center;
+}
+#top-header #cart{
+	align-self: center;
+}
+#top-header #cart i{
+	font-size: 20px;
+}
+#slideshow .slide{
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	margin: 0 1px;
+}
+#slideshow .slide:nth-child(3n+1){
+	background: linear-gradient(to right, #d799bb, #edb9d6);
+}
+#slideshow .slide:nth-child(3n+2){
+	background: linear-gradient(to right, #79b9c7, #a0e1ed);
+}
+#slideshow .slide:nth-child(3n+3){
+	background: linear-gradient(to right, #f59ea0, #fbc3c5);
+}
+#slideshow .slide-book-photo img{
+	width: 185px;
+	position: relative;
+	top: 12%;
+	left: 15%;
+	box-shadow: 5px 7px 35px -10px;
+}
+#slideshow .slide-details{
+	color: white;
+    display: grid;
+    grid-template-rows: 0.8fr 0.4fr 2fr 1fr;
+    margin: 0 10% 0 12%;
+}
+#slideshow .slide-book-name{
+	align-self: flex-end;
 	font-size: 18px;
+	font-weight: 600;
+	display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#slideshow .slide-book-author{
+	align-self: center;
+}
+#slideshow .slide-book-desc{
+	align-self: center;
+	line-height: 20px;
+}
+#slideshow .slide-book-link{
+	justify-self: center;
+}
+#slideshow .slide-book-link a{
+	background: #fff;
+    border-radius: 20px;
+    padding: 10px 50px;
+    box-shadow: 5px 7px 10px -5px;
+    color: #000;
+    display: inline-block;
+	text-decoration: none;
 }
 #wrapper{
 	display : grid;
@@ -21,7 +106,7 @@ p{
 }
 #left{
 	display:grid;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: auto;
 }
 #left #author-label, #left #book-label{
 	font-weight: 400;
@@ -32,12 +117,30 @@ p{
 	display: grid;
 	padding: 0 0 15px;
 }
-
 #left .author-photo img{
 	width: 32px;
 }
 #left .author-name{
 	align-self: center;
+}
+#left .book{
+	grid-template-columns: 1fr 3fr;
+	display: grid;
+	padding: 0 0 15px;
+}
+#left .book-photo img{
+	width: 50px;
+}
+#left .book-details{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+#left .book-name{
+	align-self: center;
+}
+#left .book-author{
+	font-size: 11px;
+	color: #738797;
 }
 #top-right{
 	border-bottom: 1px solid #e6eaed;
@@ -65,4 +168,67 @@ p{
 	border-bottom: 2px solid #56d0e9;
 	padding-bottom: 24px;
 	color: #000;
+}
+#content-right{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 70px;
+	grid-column-gap: 4%;
+}
+#content-right .book-box{
+	grid-template-areas: "photo desc" "photo desc" ". link";
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr .7fr;
+}
+#content-right .book-box .book-box-photo{
+	grid-area: photo;
+	position: relative;
+    left: 4%;
+    bottom: 13%;
+}
+#content-right .book-box .book-box-photo img{
+	width: 77%;
+	box-shadow: 5px 3px 35px -12px;
+}
+#content-right .book-box .book-box-details{
+	grid-area: desc;
+    display: grid;
+    grid-template-rows: 0.4fr 0.3fr 1fr;
+    margin-left: 3%;
+}
+#content-right .book-box .book-box-name{
+	align-self: flex-end;
+	font-size: 15px;
+	display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#content-right .book-box .book-box-author{
+	align-self: center;
+    font-size: 11px;
+    color: #777;
+}
+#content-right .book-box .book-box-desc{
+    align-self: center;
+    line-height: 20px;
+    font-size: 11.5px;
+    word-break: break-all;
+    margin-right: 10%;
+    color: #333;
+}
+#content-right .book-box .book-box-link{
+	grid-area: link;
+    justify-self: center;
+    align-self: center;
+}
+#content-right .book-box .book-box-link a{
+	background: #f2f5f7;
+    border-radius: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 30px;
 }
