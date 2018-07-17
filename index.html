@@ -12,60 +12,135 @@
 		<script src="js/q3.js" type="text/javascript"> </script>
 		<link rel="stylesheet" type="text/css" href="styles/main.css" />
 		<link rel="stylesheet" type="text/css" href="styles/homepage.css" />
+		<link rel="stylesheet" type="text/css" href="/slick/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="/slick/slick/slick-theme.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
 		<div id="container">
+			<script type="text/javascript" src="/slick/slick/slick.min.js"></script>
 			<header>
-				<h4 id="title">bookit</h4>
-				<div id="slideshow"></div>
+				<div id="top-header">
+					<div id="search-box">
+						<button type="submit"><i class="fa fa-search"></i></button>
+						<input type="text" placeholder="Search Book" />
+					</div>
+					<div id="title">bookit</div>
+					<div id="cart">
+						<a href=""><i class="fa fa-shopping-cart"></i></a>
+					</div>
+				</div>
+				<div id="slideshow">
+					<div class="regular">
+					  <div class="slide">
+						<div class="slide-book-photo"><img src="/images/big magic.jpg" alt="big magic.jpg"/></div>
+						<div class="slide-details">
+							<div class="slide-book-name">BIG MAGIC</div>
+							<div class="slide-book-author">by Elizabeth Gilbert</div>
+							<div class="slide-book-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+							<div class="slide-book-link"><a href="#">See The Book</a></div>
+						</div>
+					  </div>
+					  <div class="slide">
+						<div class="slide-book-photo"><img src="/images/ten thousand.jpg" alt="ten thousand.jpg"/></div>
+						<div class="slide-details">
+							<div class="slide-book-name">Ten Thousand Skies Above You</div>
+							<div class="slide-book-author">by Claudia Gray</div>
+							<div class="slide-book-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+							<div class="slide-book-link"><a href="#">See The Book</a></div>
+						</div>
+					  </div>
+					  <div class="slide">
+						<div class="slide-book-photo"><img src="/images/adventure.jpg" alt="adventure.jpg"/></div>
+						<div class="slide-details">
+							<div class="slide-book-name">My Adventures With Your Money</div>
+							<div class="slide-book-author">by T.D. Thornton</div>
+							<div class="slide-book-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+							<div class="slide-book-link"><a href="#">See The Book</a></div>
+						</div>
+					  </div>
+					  <div class="slide">
+						<div class="slide-book-photo"><img src="/images/rice.jpg" alt="rice.jpg"/></div>
+						<div class="slide-details">
+							<div class="slide-book-name">Rice, Noodle, Fish</div>
+							<div class="slide-book-author">by Matt Goulding</div>
+							<div class="slide-book-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+							<div class="slide-book-link"><a href="#">See The Book</a></div>
+						</div>
+					  </div>
+					  <div class="slide">
+						<div class="slide-book-photo"><img src="/images/paris.jpg" alt="paris.jpg"/></div>
+						<div class="slide-details">
+							<div class="slide-book-name">Paris The Novel</div>
+							<div class="slide-book-author">by Edward Rutherfurd</div>
+							<div class="slide-book-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+							<div class="slide-book-link"><a href="#">See The Book</a></div>
+						</div>
+					  </div>
+					</div>
+				</div>
 			</header>
 			<div id="wrapper">
 				<div id="left">
 					<section id="featured-authors">
 						<h3 id="author-label">Author of the Week</h3>
 						<div class="author">
-							<div class="author-photo"><img src="/images/john.gif" /></div>
+							<div class="author-photo"><img src="/images/john.gif" alt="John Green"/></div>
 							<div class="author-name">John Green</div>
 						</div>
 						<div class="author">
-							<div class="author-photo"><img src="/images/rebecca.gif" /></div>
+							<div class="author-photo"><img src="/images/rebecca.gif" alt="Rebecca Serle"/></div>
 							<div class="author-name">Rebecca Serle</div>
 						</div>
 						<div class="author">
-							<div class="author-photo"><img src="/images/jen.gif" /></div>
+							<div class="author-photo"><img src="/images/jen.gif" alt="Jennifer Egan"/></div>
 							<div class="author-name">Jennifer Egan</div>
 						</div>
 						<div class="author">
-							<div class="author-photo"><img src="/images/johnG.gif" /></div>
+							<div class="author-photo"><img src="/images/johnG.gif" alt="John Grisham"/></div>
 							<div class="author-name">John Grisham</div>
 						</div>
 						<div class="author">
-							<div class="author-photo"><img src="/images/jodi.gif" /></div>
+							<div class="author-photo"><img src="/images/jodi.gif" alt="Jodi Picoult"/></div>
 							<div class="author-name">Jodi Picoult</div>
 						</div>
 					</section>
 					<section id="books-of-year">
 						<h3 id="book-label">Books of the Year</h3>
 						<div class="book">
-							<div class="book-photo"></div>
+							<div class="book-photo"><img src="/images/davinci.jpg" alt="Da Vinci's Tiger"/></div>
 							<div class="book-details">
-								<div class="book-name"></div>
-								<div class="book-author"></div>
+								<div class="book-name">Da Vinci's Tiger</div>
+								<div class="book-author">by L. M. Elliott</div>
 							</div>
 						</div>
 						<div class="book">
-							<div class="book-photo"></div>
+							<div class="book-photo"><img src="/images/art.jpg" alt="Art Students Painting"/></div>
 							<div class="book-details">
-								<div class="book-name"></div>
-								<div class="book-author"></div>
+								<div class="book-name">Art Students League of NY on Painting</div>
+								<div class="book-author">by James Lancel McElhinney</div>
 							</div>
 						</div>
 						<div class="book">
-							<div class="book-photo"></div>
+							<div class="book-photo"><img src="/images/paris.jpg" alt="Paris"/></div>
 							<div class="book-details">
-								<div class="book-name"></div>
-								<div class="book-author"></div>
+								<div class="book-name">Paris The Novel</div>
+								<div class="book-author">by Edward Rutherfurd</div>
+							</div>
+						</div>
+						<div class="book">
+							<div class="book-photo"><img src="/images/adventure.jpg" alt="Adventures with Money"/></div>
+							<div class="book-details">
+								<div class="book-name">My Adventures With Your Money</div>
+								<div class="book-author">by T.D. Thornton</div>
+							</div>
+						</div>
+						<div class="book">
+							<div class="book-photo"><img src="/images/rice.jpg" alt="Rice Noodle"/></div>
+							<div class="book-details">
+								<div class="book-name">Rice, Noodle, Fish</div>
+								<div class="book-author">by Matt Goulding</div>
 							</div>
 						</div>
 					</section>
@@ -84,8 +159,34 @@
 							</ul>
 						</nav>
 					</div>
-					<div id="right-content">
-					
+					<div id="content-right">
+						<div class="book-box">
+							<div class="book-box-photo"><img src="/images/paris.jpg" alt="paris.jpg"/></div>
+							<div class="book-box-details">
+								<div class="book-box-name">Paris The Novel</div>
+								<div class="book-box-author">by Edward Rutherfurd</div>
+								<div class="book-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+							</div>
+							<div class="book-box-link"><a href="#">Add to Cart</a></div>
+					    </div>
+						<div class="book-box">
+							<div class="book-box-photo"><img src="/images/paris.jpg" alt="paris.jpg"/></div>
+							<div class="book-box-details">
+								<div class="book-box-name">Paris The Novel</div>
+								<div class="book-box-author">by Edward Rutherfurd</div>
+								<div class="book-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+							</div>
+							<div class="book-box-link"><a href="#">Add to Cart</a></div>
+					    </div>
+						<div class="book-box">
+							<div class="book-box-photo"><img src="/images/paris.jpg" alt="paris.jpg"/></div>
+							<div class="book-box-details">
+								<div class="book-box-name">Paris The Novel</div>
+								<div class="book-box-author">by Edward Rutherfurd</div>
+								<div class="book-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+							</div>
+							<div class="book-box-link"><a href="#">Add to Cart</a></div>
+					    </div>
 					</div>
 				</div>
 			</div>
