@@ -134,6 +134,7 @@ p{
 #left .book-details{
 	display: grid;
 	grid-template-rows: 1fr 1fr;
+	margin-right: 12%;
 }
 #left .book-name{
 	align-self: center;
@@ -174,6 +175,7 @@ p{
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 70px;
 	grid-column-gap: 4%;
+	grid-row-gap: 70px;
 }
 #content-right .book-box{
 	grid-template-areas: "photo desc" "photo desc" ". link";
