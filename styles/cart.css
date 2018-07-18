@@ -1,43 +1,12 @@
-.content .medium_heading{
-	font-size		: 200%;
-	text-align		: center;
-	margin			: 20px 0 50px;
+#content-container{
+	width: 75%;
+	margin: 0 auto;
 }
-.content #cart_wrapper{
-	background		: #FAE4B6;
-	padding			: 40px 0 50px;
+#content-container h2{
+	font-size: 24px;
+	text-transform: uppercase;
 }
-#cart_wrapper .item, #cart_wrapper #cart_labels{
-	margin-left		: 5%;
-}
-#cart_wrapper #cart_labels div{
-	font-weight		: 600;
-	font-size		: 110%;
-}
-#cart_wrapper #cart_labels h3{
-	border-bottom	: 2px solid #950426;
-	padding			: 0 15px;
-	display			: inline-block;
-}
-#cart_wrapper .item div, #cart_wrapper #cart_labels div{
-	float			: left;
-}
-#cart_wrapper .item .item_name, #cart_wrapper #cart_labels .item_name{
-	width			: 20%;
-}
-#cart_wrapper .item .item_quantity, #cart_wrapper .item .item_price, #cart_wrapper #cart_labels .item_price, #cart_wrapper #cart_labels .item_quantity{
-	width			: 8%;
-	text-align		: center;
-	margin			: 0 2% 10px 0;
-}
-#cart_wrapper .item input{
-	width			: 6%;
-	margin-bottom	: 10px;
-}
-
-
-#total_price{
-	margin			: 15px 28% 0;
-	font-weight		: 600;
-	font-size		: 110%;
+#cart-container{
+	background: #ccc;
+	height: 400px;
 }
