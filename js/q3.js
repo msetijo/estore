@@ -11,7 +11,8 @@ $( document ).ready(function() {
 		$("nav li a.active").removeClass("active");
 		$(this).addClass("active");
 	});
-	$( ".book-cart").click(function(){
+	$( ".book-cart").click(function(e){
+		e.preventDefault();
 		addItemToCart(this);
 		cartAmount();
 	});

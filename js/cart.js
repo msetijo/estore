@@ -61,15 +61,16 @@ function loadCart(){
 			var itemPrice = "<div class='item-price'>"+item.price+"</div>";
 			var itemQuantity = "<div class='item-amount'>"+item.quantity+"</div>";
 			
-			var totalPrice = parseInt(item.price.substr(1)) * item.quantity;
+			var totalPrice = parseFloat(item.price.substr(1)) * item.quantity;
 			sum += totalPrice;
 			
-			var itemTotalPrice = "<div class='item-total-price'>"+totalPrice+"</div>";
+			var itemTotalPrice = "<div class='item-total-price'>$"+totalPrice+"</div>";
 			
 			str += "<div class='item-box'>"+ itemName + itemPrice + itemQuantity + itemTotalPrice +"</div>";
 		});
-		var sumStr = "<div id='cartSum'>"+sum+"</div>";
-		$("#cart-container").html(str + sumStr);
+		var label = "<div class='label-box'><div id='name-label'>Item Name</div><div id='price-label'>Price</div><div id='amount-label'>Quantity</div><div id='total-label'>Total Price</div></div>";
+		var sumStr = "<div id='cartSum'><div>Total: </div><span>$"+sum.toFixed(2)+"</span></div>";
+		$("#cart-container").html(label + str + sumStr);
 		
 	}
 	
