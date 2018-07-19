@@ -1,5 +1,6 @@
 var path = window.location.pathname;
 var page = path.split("/").pop();
+var sum = 0;
 
 var cartItems, item;
 
@@ -59,12 +60,21 @@ function loadCart(){
 			var itemName = "<div class='item-name'>"+item.name+"</div>";
 			var itemPrice = "<div class='item-price'>"+item.price+"</div>";
 			var itemQuantity = "<div class='item-amount'>"+item.quantity+"</div>";
-			str += itemName + itemPrice + itemQuantity;
+			
+			var totalPrice = parseInt(item.price.substr(1)) * item.quantity;
+			sum += totalPrice;
+			
+			var itemTotalPrice = "<div class='item-total-price'>"+totalPrice+"</div>";
+			
+			str += "<div class='item-box'>"+ itemName + itemPrice + itemQuantity + itemTotalPrice +"</div>";
 		});
-		$("#cart-container").html(str);
+		var sumStr = "<div id='cartSum'>"+sum+"</div>";
+		$("#cart-container").html(str + sumStr);
+		
 	}
-
+	
 }
+
 function removeItem(){
 	
 }

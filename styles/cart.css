@@ -7,6 +7,33 @@
 	text-transform: uppercase;
 }
 #cart-container{
-	background: #ccc;
-	height: 400px;
+	display: grid;
+}
+#cart-container .item-box {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 50px;
+    border-top: 1px solid #ccc;
+}
+#cart-container .item-box:last-child {
+	border-bottom: 1px solid #ccc;
+}
+#cart-container .item-box div{
+	align-self: center;
+}
+#cart-container .item-box .item-name{
+	font-size: 16px;
+}
+#cart-container .item-box .item-price{
+	
+}
+#cart-container .item-box .item-amount{
+	font-size: 15px;
+}
+#cart-container .item-box .item-total-price{
+	font-size: 17px;
+}
+#cartSum{
+	display: grid;
+	grid-template-columns: 2fr 0.5fr;
 }
