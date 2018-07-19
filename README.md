@@ -1,7 +1,9 @@
 # estore
 
-E-store under development. Hosted in bookit.comuf.com
+Bookit is an online e-book store. It'll be continously updated, so this is not a complete project.
 
-Please use ms@gmail.com as username and japan as password for Log In page. You can only see Cart page after logging in.
+Please view the website in https://msetijo.github.io/estore/
 
-You have to refresh Cart page to see any items removed, and you have to go to Cart page to see items that are added.
+Design is inspired by this Dribble design https://dribbble.com/shots/2425824--Exploration-Book-Store-Website
+
+The slider is from a jS plugin called slick http://kenwheeler.github.io/slick/
