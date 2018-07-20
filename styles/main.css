@@ -31,7 +31,7 @@ p{
     margin-top: 8px;
     border: none;
     background: transparent;
-    width: 130px;
+    width: 65%;
 }
 #top-header #title{
 	text-align: center;
@@ -48,14 +48,48 @@ p{
 	text-decoration: none;
 }
 #top-header #cart-symbol i{
-	font-size: 16px;
+	font-size: 20px;
 }
 #top-header #cart-symbol #cart-amount {
     display: inline-block;
     margin-left: 6%;
-    font-size: 15px;
+    font-size: 18px;
 }
 footer{
 	text-align: center;
 	margin: 50px 0 30px;
+}
+
+
+@media (min-width: 300px) and (max-width: 1200px){
+	#top-header{
+		grid-template-areas: "search cart""title title";
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 0.7fr 1.5fr;
+		padding: 0;
+		
+	}
+	#top-header #search-box{
+	    grid-area: search;
+		justify-self: center;
+	}
+	#top-header #title{
+		justify-self: center;
+		grid-area: title;
+	}
+	#top-header #cart-symbol{
+		grid-area: cart;
+		justify-self: center;
+	}
+	#top-header #cart-symbol a{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	#top-header #cart-symbol i{
+		font-size: 16px;
+	}
+	#top-header #cart-symbol #cart-amount {
+		margin-left: 40%;
+		font-size: 15px;
+	}
 }
