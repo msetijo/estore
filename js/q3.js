@@ -2,7 +2,7 @@
 $( document ).ready(function() {
 
 	$(".regular").slick({
-		arrows: false,
+		arrows: true,
 		dots: true,
 		infinite: true,
 		slidesToShow: 2.8,
@@ -15,7 +15,7 @@ $( document ).ready(function() {
 		}, {
 			breakpoint: 820,
 			settings: {
-				slidesToShow: 1
+				slidesToShow: 1.7
 			}
 		}, {
 			breakpoint: 565,
@@ -27,7 +27,8 @@ $( document ).ready(function() {
 		}]
 	});
 
-    $( "nav li a" ).click(function() {
+    $( "nav li a" ).click(function(e) {
+		e.preventDefault();
 		$("nav li a.active").removeClass("active");
 		$(this).addClass("active");
 	});

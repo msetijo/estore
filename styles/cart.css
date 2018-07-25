@@ -1,64 +1,68 @@
-#content-container{
-	width: 70%;
-	margin: 0 auto;
-}
-#content-container h2{
-	font-size: 24px;
-	text-transform: uppercase;
-	margin: 40px 0;
-}
-#cart-container{
-	display: grid;
-}
-#cart-container .label-box{
-	display: grid;
-    grid-template-columns: 1fr 0.7fr 0.7fr 0.5fr;
-    grid-template-rows: 40px;
-}
-#cart-container .label-box div{
-	align-self: center;
-	justify-self: center;
-	text-transform: uppercase;
-	color: #777;
-}
-#cart-container .item-box {
-    display: grid;
-    grid-template-columns: 1fr 0.7fr 0.7fr 0.5fr;
-    grid-template-rows: 70px;
-    border-bottom: 1px solid #ccc;
-}
-#cart-container .item-box div{
-	align-self: center;
-}
-#cart-container .item-box .item-name{
-	font-size: 16px;
-}
-#cart-container .item-box .item-price{
-	justify-self: center;
-}
-#cart-container .item-box .item-amount{
-	font-size: 15px;
-	justify-self: center;
-}
-#cart-container .item-box .item-total-price{
-	font-size: 17px;
-	justify-self: center;
-}
-#cartSum{
-    display: grid;
-    grid-template-columns: 2fr 0.34fr;
-    margin-bottom: 100px;
-    grid-template-areas: "total sum";
-    grid-template-rows: 50px;
-	font-size: 20px;
-}
-#cartSum div{
-	grid-area: total;
-    justify-self: right;
-    align-self: center;
-}
-#cartSum span{
-	grid-area: sum;
-    align-self: center;
-    justify-self: center;
+@media (min-width: 300px){
+	#content-container{
+		width: 80%;
+		margin: 0 auto;
+	}
+	#content-container h2{
+		font-size: 20px;
+		text-transform: uppercase;
+		margin: 40px 0 20px;
+	}
+	#cart-container{
+		display: grid;
+	}
+	#cart-container .label-box{
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		grid-template-rows: 40px;
+		font-size: 13px;
+		margin-top: 30px;
+	}
+	#cart-container .label-box div{
+		align-self: center;
+		justify-self: center;
+		text-transform: uppercase;
+		color: #777;
+	}
+	#cart-container .item-box {
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		grid-template-rows: 70px;
+		border-bottom: 1px solid #ccc;
+	}
+	#cart-container .item-box div{
+		align-self: center;
+	}
+	#cart-container .item-box .item-name{
+		font-size: 14px;
+	}
+	#cart-container .item-box .item-price{
+		justify-self: center;
+	}
+	#cart-container .item-box .item-amount{
+		font-size: 15px;
+		justify-self: center;
+	}
+	#cart-container .item-box .item-total-price{
+		font-size: 16px;
+		justify-self: center;
+	}
+	#cartSum{
+		display: grid;
+		grid-template-columns: 2fr 0.75fr;
+		margin-bottom: 100px;
+		grid-template-areas: "total sum";
+		grid-template-rows: 50px;
+		font-size: 20px;
+	}
+	#cartSum div{
+		grid-area: total;
+		justify-self: right;
+		align-self: center;
+	}
+	#cartSum span{
+		grid-area: sum;
+		align-self: center;
+		justify-self: center;
+	}
 }
