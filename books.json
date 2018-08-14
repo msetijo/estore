@@ -1,67 +1,65 @@
-{
-	"books" : [
-		{
-		  "bookTitle": "Act Like It",
-		  "bookAuthor": "Lucy Parker",
-		  "bookPrice": 19.99,
-		  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		  "bookPic": "act.jpg"
-		},
-		{
-		  "bookTitle": "Alone On The Wall",
-		  "bookAuthor": "David Roberts",
-		  "bookPrice": 18.79,
-		  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		  "bookPic": "alone.jpg"
-		},
-		{
-		  "bookTitle": "The Painter's Daughter",
-		  "bookAuthor": "Julie Klassen",
-		  "bookPrice": 21.95,
-		  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		  "bookPic": "painter.jpg"
-		},
-		{
-		  "bookTitle": "Dark Murder",
-		  "bookAuthor": "Helen Durrant",
-		  "bookPrice": 16.99,
-		  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		  "bookPic": "dark.jpg"
-		},
-		{
-		  "bookTitle": "Alex Ferguson",
-		  "bookAuthor": "Alex Ferguson",
-		  "bookPrice": 18.79,
-		  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		  "bookPic": "ferguson.jpg"
-		},
-		{
-		  "bookTitle": "The Devil's Playground",
-		  "bookAuthor": "Eliza Freed",
-		  "bookPrice": 21.99,
-		  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		  "bookPic": "devil.jpg"
-		},
-		{
-		  "bookTitle": "Inconceivable",
-		  "bookAuthor": "Tegan Wren",
-		  "bookPrice": 25.99,
-		  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		  "bookPic": "inconceivable.jpg"
-		},
-		{
-		  "bookTitle": "Four Days",
-		  "bookAuthor": "Iain Ryan",
-		  "bookPrice": 19.88,
-		  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		  "bookPic": "four-days.jpg"
-		},
-		{
-		  "bookTitle": "Before I Let You Go",
-		  "bookAuthor": "Marieke Nijkamp",
-		  "bookPrice": 20.99,
-		  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-		  "bookPic": "before.jpg"
-		}
-	]
-}
+[
+	{
+	  "bookTitle": "Act Like It",
+	  "bookAuthor": "Lucy Parker",
+	  "bookPrice": 19.99,
+	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookPic": "act.jpg"
+	},
+	{
+	  "bookTitle": "Alone On The Wall",
+	  "bookAuthor": "David Roberts",
+	  "bookPrice": 18.79,
+	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookPic": "alone.jpg"
+	},
+	{
+	  "bookTitle": "The Painter's Daughter",
+	  "bookAuthor": "Julie Klassen",
+	  "bookPrice": 21.95,
+	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookPic": "painter.jpg"
+	},
+	{
+	  "bookTitle": "Dark Murder",
+	  "bookAuthor": "Helen Durrant",
+	  "bookPrice": 16.99,
+	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookPic": "dark.jpg"
+	},
+	{
+	  "bookTitle": "Alex Ferguson",
+	  "bookAuthor": "Alex Ferguson",
+	  "bookPrice": 18.79,
+	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookPic": "ferguson.jpg"
+	},
+	{
+	  "bookTitle": "The Devil's Playground",
+	  "bookAuthor": "Eliza Freed",
+	  "bookPrice": 21.99,
+	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookPic": "devil.jpg"
+	},
+	{
+	  "bookTitle": "Inconceivable",
+	  "bookAuthor": "Tegan Wren",
+	  "bookPrice": 25.99,
+	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookPic": "inconceivable.jpg"
+	},
+	{
+	  "bookTitle": "Four Days",
+	  "bookAuthor": "Iain Ryan",
+	  "bookPrice": 19.88,
+	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookPic": "four-days.jpg"
+	},
+	{
+	  "bookTitle": "Before I Let You Go",
+	  "bookAuthor": "Marieke Nijkamp",
+	  "bookPrice": 20.99,
+	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookPic": "before.jpg"
+	}
+]
