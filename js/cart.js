@@ -8,6 +8,12 @@ $( document ).ready(function() {
 	cartAmount();
 	
 	if(page == "cart.html") loadCart(); 
+
+	$( document).on("click", ".remove-item", function(e) {
+		e.preventDefault();
+		removeItem(this);
+		cartAmount();
+	});
 	
 });
 function cartAmount(){
@@ -24,6 +30,7 @@ function addItemToCart(n){
 	var bookPrice = $(n).find("span").text();
 	var bookQuantity = 1;
 	
+	console.log(bookName);
 	cartItems = JSON.parse(sessionStorage.getItem("cartItems") || "null");
 	
 	if(cartItems == null){
@@ -47,11 +54,18 @@ function addItemToCart(n){
 	window.sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
 	
 }
-function loadCart(){
+function loadCart(updatedCart){
 	var str = "";
-	cartItems = JSON.parse(sessionStorage.getItem("cartItems") || null);
+	sum = 0;
 	
-	if(cartItems === null){
+	if (updatedCart === undefined) {
+		cartItems = JSON.parse(sessionStorage.getItem("cartItems") || null);
+	}else{
+		cartItems = updatedCart;
+		window.sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
+	}
+	
+	if(cartItems.length == 0){
 		str = "No items on the cart";
 		$("#cart-container").html(str);
 	}else{
@@ -61,12 +75,12 @@ function loadCart(){
 			var itemPrice = "<div class='item-price'>"+item.price+"</div>";
 			var itemQuantity = "<div class='item-amount'>"+item.quantity+"</div>";
 			
-			var totalPrice = parseFloat(item.price.substr(1)) * item.quantity;
+			var totalPrice = parseFloat(item.price) * item.quantity;
 			sum += totalPrice;
 			
 			var itemTotalPrice = "<div class='item-total-price'>$"+totalPrice+"</div>";
 			
-			str += "<div class='item-box'>"+ itemName + itemPrice + itemQuantity + itemTotalPrice +"</div>";
+			str += "<div class='item-box'>"+ itemName + itemPrice + itemQuantity + itemTotalPrice +"<div class='remove-item'><a href=''><i class='fa fa-times'></i></a></div></div>";
 		});
 		var label = "<div class='label-box'><div id='name-label'>Item Name</div><div id='price-label'>Price</div><div id='amount-label'>Quantity</div><div id='total-label'>Total Price</div></div>";
 		var sumStr = "<div id='cartSum'><div>Total: </div><span>$"+sum.toFixed(2)+"</span></div>";
@@ -76,6 +90,16 @@ function loadCart(){
 	
 }
 
-function removeItem(){
+function removeItem(n){
+	var bookName = $(n).parent().find(".item-name").text();
 	
+	cartItems = JSON.parse(sessionStorage.getItem("cartItems"));
+	
+	for (var i in cartItems) {
+		if (cartItems[i].name == bookName) {
+			cartItems.splice(i,1);
+			break; //Stop this loop, we found it!
+		}
+	}
+	loadCart(cartItems);
 }
