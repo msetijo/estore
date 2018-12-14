@@ -30,7 +30,6 @@ function addItemToCart(n){
 	var bookPrice = $(n).find("span").text();
 	var bookQuantity = 1;
 	
-	console.log(bookName);
 	cartItems = JSON.parse(sessionStorage.getItem("cartItems") || "null");
 	
 	if(cartItems == null){
