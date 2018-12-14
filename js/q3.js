@@ -51,7 +51,7 @@ function showBooks(){
 			books += "<div class='book-box-details'><div class='book-box-name'>"+ book['bookTitle'] +"</div>";
 			books += "<div class='book-box-author'>"+ book['bookAuthor'] +"</div>";
 			books += "<div class='book-box-desc'>"+ book['bookDesc'] +"</div></div>";
-			books += "<div class='book-box-link'><a class='book-cart' href=''><i class='fa fa-cart-plus'></i><span class='book-box-price'>"+ book['bookPrice'] +"</span></a></div>";
+			books += "<div class='book-box-link'><a class='book-cart' href='javascript:void(0)'><i class='fa fa-cart-plus'></i><span class='book-box-price'>"+ book['bookPrice'] +"</span></a></div>";
 			books += "</div>";
 		});
 		
