@@ -27,15 +27,16 @@ $( document ).ready(function() {
 		}]
 	});
 
-    $( "nav li a" ).click(function(e) {
+    $( "nav li a" ).on("click", function (e) {
+		e.preventDefault();
 		$("nav li a.active").removeClass("active");
 		$(this).addClass("active");
-		return false;
 	});
-	$( ".book-cart").click(function(e){
+	
+	$(document).on("click", '.book-cart', function (e) {
+		e.preventDefault();
 		addItemToCart(this);
 		cartAmount();
-		return false;
 	});
 	
 });
@@ -43,7 +44,7 @@ $( document ).ready(function() {
 function showBooks(){
 	
 	var books = "";
-	
+
 	$.getJSON( 'https://raw.githubusercontent.com/msetijo/estore/master/books.json', function( data ) {
 		
 		$.each( data, function( index, book ) {
