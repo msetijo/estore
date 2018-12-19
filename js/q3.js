@@ -49,8 +49,7 @@ function showBooks(filter){
 	arr = [];
 	filterLowercase = filter.toLowerCase();
 
-	//$.getJSON( 'https://raw.githubusercontent.com/msetijo/estore/master/books.json', function( data ) {
-	$.getJSON( '../books.json', function( data ) {	
+	$.getJSON( 'https://raw.githubusercontent.com/msetijo/estore/master/books.json', function( data ) {
 		
 		arr = data;
 
