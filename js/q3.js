@@ -31,6 +31,8 @@ $( document ).ready(function() {
 		e.preventDefault();
 		$("nav li a.active").removeClass("active");
 		$(this).addClass("active");
+		var clickedText = $(e.target).text();
+		showBooks(clickedText);
 	});
 	
 	$(document).on("click", '.book-cart', function (e) {
@@ -41,13 +43,24 @@ $( document ).ready(function() {
 	
 });
 
-function showBooks(){
+function showBooks(filter){
 	
-	var books = "";
+	books = "";
+	arr = [];
+	filterLowercase = filter.toLowerCase();
 
-	$.getJSON( 'https://raw.githubusercontent.com/msetijo/estore/master/books.json', function( data ) {
+	//$.getJSON( 'https://raw.githubusercontent.com/msetijo/estore/master/books.json', function( data ) {
+	$.getJSON( '../books.json', function( data ) {	
 		
-		$.each( data, function( index, book ) {
+		arr = data;
+
+		if(filter !== 'All Genres'){
+			arr = $.grep(data, function( n, i ) {
+				return n.bookGenre === filterLowercase;
+			});
+		}
+
+		$.each( arr, function( index, book ) {
 			books += "<div class='book-box'><div class='book-box-photo'><img src='images/" + book['bookPic'] + "'/></div>";
 			books += "<div class='book-box-details'><div class='book-box-name'>"+ book['bookTitle'] +"</div>";
 			books += "<div class='book-box-author'>"+ book['bookAuthor'] +"</div>";
@@ -56,6 +69,7 @@ function showBooks(){
 			books += "</div>";
 		});
 		
-		$("#content-right").append(books);
+		$("#content-right").html(books);
+		$("#category-label").text(filter);
 	});
 }
