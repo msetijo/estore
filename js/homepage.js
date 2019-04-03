@@ -63,7 +63,7 @@ function showBooks(filter){
 
 		$.each( arr, function( index, book ) {
 			books += "<div class='book-box'><div class='book-box-photo'><img src='images/" + book['bookPic'] + "'/></div>";
-			books += "<div class='book-box-details'><div class='book-box-name'><a href='/book.html?book="+book['bookTitle']+"'>"+ book['bookTitle'] +"</a></div>";
+			books += "<div class='book-box-details'><div class='book-box-name'><a href='../estore/book.html?book="+book['bookTitle']+"'>"+ book['bookTitle'] +"</a></div>";
 			books += "<div class='book-box-author'>"+ book['bookAuthor'] +"</div>";
 			books += "<div class='book-box-desc'>"+ book['bookDesc'] +"</div></div>";
 			books += "<div class='book-box-link'><button class='book-cart' value='"+ book['bookTitle']+"'><i class='fa fa-cart-plus'></i><span class='book-box-price'>"+ book['bookPrice'] +"</span></button></div>";
