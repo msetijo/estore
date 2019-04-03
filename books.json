@@ -5,70 +5,79 @@
 	  "bookPrice": 19.99,
 	  "bookDesc": "Richard Troy used to be the hottest actor in London, but the only thing firing up lately is his temper. We all love to love a bad boy, but Richard's antics have made him Enemy Number One, breaking the hearts of fans across the city.",
 		"bookPic": "act.jpg",
+		"bookPicLarge": "act-large.jpg",
 		"bookGenre": "romance"
 	},
 	{
 	  "bookTitle": "Alone On The Wall",
-	  "bookAuthor": "David Roberts",
+	  "bookAuthor": "Alex Honnold",
 	  "bookPrice": 18.79,
-	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookDesc": "On June 3rd, 2017, Alex Honnold became the first person to free solo Yosemite's El Capitan—to scale the wall without rope, a partner, or any protective gear—completing what was described as \"the greatest feat of pure rock climbing in the history of the sport\" (National Geographic) and \"one of the great athletic feats of any kind, eve\" (New York Times). Already one of the most famous adventure athletes in the world, Honnold has now been hailed as \"the greatest climber of all time\" (Vertical magazine).",
 		"bookPic": "alone.jpg",
+		"bookPicLarge": "alone-large.jpg",
 		"bookGenre": "bibliography"
 	},
 	{
-	  "bookTitle": "The Painter's Daughter",
+	  "bookTitle": "The Painter&apos;s Daughter",
 	  "bookAuthor": "Julie Klassen",
 	  "bookPrice": 21.95,
-	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookDesc": "Sophie Dupont, daughter of a portrait painter, assists her father in his studio, keeping her own artwork out of sight. She often walks the cliffside path along the north Devon coast, popular with artists and poets. It's where she met the handsome Wesley Overtree, the first man to tell her she's beautiful.",
 		"bookPic": "painter.jpg",
+		"bookPicLarge": "painter-large.jpg",
 		"bookGenre": "romance"
 	},
 	{
 	  "bookTitle": "Dark Murder",
 	  "bookAuthor": "Helen Durrant",
 	  "bookPrice": 16.99,
-	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookDesc": "Detective Stephen Greco has just started a new job at Oldston CID and now he faces a series of murders with seemingly no connection but the brutal disfigurement of the victims. Greco’s team is falling apart under the pressure and he doesn't know who he can trust. Then they discover a link to a local drug dealer, but maybe it’s not all that it seems.",
 		"bookPic": "dark.jpg",
+		"bookPicLarge": "dark-large.jpg",
 		"bookGenre": "mystery"
 	},
 	{
 	  "bookTitle": "Alex Ferguson",
 	  "bookAuthor": "Alex Ferguson",
 	  "bookPrice": 18.79,
-	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookDesc": "Over the past four years, Alex Ferguson has been reflecting on and jotting down the highlights of his extraordinary career, and here he reveals his amazing story as it unfolded, from his very early days in the tough shipyard areas of Govan. Sir Alex announced his retirement as manager of Manchester United after 27 years in the role.",
 		"bookPic": "ferguson.jpg",
+		"bookPicLarge": "ferguson.jpg",
 		"bookGenre": "bibliography"
 	},
 	{
-	  "bookTitle": "The Devil's Playground",
+	  "bookTitle": "The Devil&apos;s Playground",
 	  "bookAuthor": "Eliza Freed",
 	  "bookPrice": 21.99,
-	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookDesc": "Former U.S. Attorney, Meredith Walsh, took some time off to raise her children. But the time took away everything she once trusted about herself. She’s lost within the mundane confines of her children's schedules of lacrosse, soccer, Cub Scouts, and math facts. Desperate for a sliver of her former passion, and isolated in the small town her corporate husband relocated her to, she counsels herself on risking her family for the rush of a fling.",
 		"bookPic": "devil.jpg",
+		"bookPicLarge": "devil.jpg",
 		"bookGenre": "romance"
 	},
 	{
 	  "bookTitle": "Inconceivable",
 	  "bookAuthor": "Tegan Wren",
 	  "bookPrice": 25.99,
-	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookDesc": "When Ozarks native Hatty goes “whole hog” during karaoke, she catches the eye of Prince John. He isn’t what she expects the heir to a small European nation to be: he's affable, witty, and isn’t put off by her tell-it-like-it-is demeanor. Their flirtation should be short lived, but a force stronger than fate—Hatty’s newspaper editor—assigns her to cover the royals. After spending time together, she and John soon begin dating, and Hatty finds herself making headlines instead of writing them.",
 		"bookPic": "inconceivable.jpg",
+		"bookPicLarge": "inconceivable-large.jpg",
 		"bookGenre": "romance"
 	},
 	{
 	  "bookTitle": "Four Days",
 	  "bookAuthor": "Iain Ryan",
 	  "bookPrice": 19.88,
-	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookDesc": "Jim Harris is a hard-drinking Australian detective on his way to a nervous breakdown. Every day, he works alongside corrupt cops and dangerous crooks. That is, until a brutal murder case unravels his career, bringing past indiscretions to light. Alone, afraid, and out of control, Harris makes a pact with himself: Four days to locate the killer. Four days to take revenge. Four days to find redemption.",
 		"bookPic": "four-days.jpg",
+		"bookPicLarge": "four-days-large.png",
 		"bookGenre": "mystery"
 	},
 	{
 	  "bookTitle": "Before I Let You Go",
 	  "bookAuthor": "Marieke Nijkamp",
 	  "bookPrice": 20.99,
-	  "bookDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+	  "bookDesc": "Best friends Corey and Kyra were inseparable in their snow-covered town of Lost Creek, Alaska. When Corey moves away, she makes Kyra promise to stay strong during the long, dark winter, and wait for her return.",
 		"bookPic": "before.jpg",
+		"bookPicLarge": "before-large.jpg",
 		"bookGenre": "mystery"
 	}
 ]

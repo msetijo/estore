@@ -1,89 +1,61 @@
-body{ 
-	background : #f2f5f7;
-	margin : 0;
-	font-family	: "Varela Round", Arial;
-	font-size : 13px;
-}
-p{
-	line-height : 1.5;
-	font-size : 100%;
-}
-.left{
-	float : left;	
-}
-#top-header{
-	display: grid;
-	grid-template-columns: 0.5fr 3fr 0.22fr;
-	background-color: #fff;
-	padding: 15px 0;
-}
-#top-header #search-box{
-	text-align: right;
-}
-#top-header #search-box button{
-	background: transparent;
-    border: none;
-    color: #888;
-	margin-left: 15%;
-}
-#top-header #search-box input[type=text]{
-	padding: 6px;
-    margin-top: 8px;
-    border: none;
-    background: transparent;
-    width: 65%;
-}
-#top-header #title{
-	text-align: center;
-	align-self: center;
-}
-#top-header #title a{
-	font-size: 22px;
-	text-decoration: none;
-}
-#top-header #cart-symbol{
-	align-self: center;
-}
-#top-header #cart-symbol a{
-	text-decoration: none;
-}
-#top-header #cart-symbol i{
-	font-size: 20px;
-}
-#top-header #cart-symbol #cart-amount {
-    display: inline-block;
-    margin-left: 6%;
-    font-size: 18px;
-}
-footer{
-	text-align: center;
-	margin: 50px 0 30px;
-}
-
-
-@media (min-width: 300px) and (max-width: 1200px){
+@media (min-width: 300px){
+	body{ 
+		background : #f2f5f7;
+		margin : 0;
+		font-family	: "Varela Round", Arial;
+		font-size : 13px;
+	}
+	p{
+		line-height : 1.5;
+		font-size : 100%;
+	}
+	.left{
+		float : left;	
+	}
 	#top-header{
+		display: grid;
 		grid-template-areas: "search cart""title title";
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 0.7fr 1.5fr;
 		padding: 0;
-		
+		background-color: #fff;
 	}
 	#top-header #search-box{
 	    grid-area: search;
-		justify-self: center;
+		justify-self: left;
+	}
+	#top-header #search-box button{
+		background: transparent;
+		border: none;
+		color: #888;
+		margin-left: 15%;
+	}
+	#top-header #search-box input[type=text]{
+		padding: 6px;
+		margin-top: 8px;
+		border: none;
+		background: transparent;
+		width: 65%;
 	}
 	#top-header #title{
 		justify-self: center;
+		align-self: center;
 		grid-area: title;
+	}
+	#top-header #title a{
+		font-size: 22px;
+		text-decoration: none;
 	}
 	#top-header #cart-symbol{
 		grid-area: cart;
-		justify-self: center;
+		justify-self: right;
+		margin-right: 50px;
+		align-self: center;
 	}
 	#top-header #cart-symbol a{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		text-decoration: none;
 	}
 	#top-header #cart-symbol i{
 		font-size: 16px;
@@ -91,5 +63,158 @@ footer{
 	#top-header #cart-symbol #cart-amount {
 		margin-left: 40%;
 		font-size: 15px;
+	}
+	#wrapper{
+		display : grid;
+		grid-template-areas: "right" "left";
+		grid-template-columns: auto;
+		padding: 0 3%;
+		margin-top: 50px;
+	}
+	#left{
+		display:grid;
+		grid-template-rows: auto;
+		grid-area: left;
+	}
+	#featured-authors{
+		margin-top: 40px;
+	}
+	#left #author-label, #left #book-label{
+		font-weight: 400;
+		font-size: 17px;
+		margin: 20px 0 30px 5%;
+	}
+	#left .author{
+		grid-template-columns: 1fr 3fr;
+		font-size: 12px;
+		color: #738797;
+		display: grid;
+		padding: 0 0 15px;
+	}
+	#left .author-photo{
+		justify-self: center;
+	}
+	#left .author-photo img{
+		width: 50px;
+	}
+	#left .author-name{
+		align-self: center;
+	}
+	#books-of-year{
+		margin-top: 30px;
+	}
+	#left .book{
+		grid-template-columns: 1fr 3fr;
+		display: grid;
+		padding: 0 0 15px;
+	}
+	#left .book-photo{
+		justify-self: center;
+	}
+	#left .book-photo img{
+		width: 50px;
+	}
+	#left .book-details{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		margin-right: 12%;
+	}
+	#left .book-name{
+		align-self: center;
+	}
+	#left .book-author{
+		font-size: 11px;
+		color: #738797;
+	}
+	footer{
+		text-align: center;
+		margin: 50px 0 30px;
+	}
+}
+
+@media (min-width: 566px){
+	#left .author{
+		font-size: 14px;
+		grid-template-columns: 1fr 4fr;
+	}
+	#left .book{
+		grid-template-columns: 1fr 4fr;
+	}
+	#left .book-photo img{
+		width: 70px;
+	}
+	#left .book-details{
+		font-size: 14px;
+	}
+}
+	
+@media (min-width: 1200px){
+
+	#top-header{
+		grid-template-columns: 0.5fr 3fr 0.22fr;
+		padding: 15px 0;
+		grid-template-areas: unset;
+		grid-template-rows: unset;
+	}
+	#top-header #search-box{
+		text-align: right;
+		grid-area: unset;
+		justify-self: auto;
+	}
+	#top-header #title{
+		text-align: center;
+		align-self: center;
+		grid-area: unset;
+	}
+	#top-header #cart-symbol{
+		align-self: center;
+		grid-area: unset;
+	}
+	#top-header #cart-symbol a{
+		text-decoration: none;
+	}
+	#top-header #cart-symbol i{
+		font-size: 20px;
+	}
+	#top-header #cart-symbol #cart-amount {
+		display: inline-block;
+		margin-left: 6%;
+		font-size: 18px;
+	}
+	#wrapper{
+		grid-template-columns: 1fr 5fr;
+	}
+	#left{
+		grid-area: unset;
+	}
+	#featured-authors{
+		margin: 0;
+	}
+	#left #author-label, #left #book-label{
+		margin: 20px 0 25px;
+	}
+	#left .author-photo{
+		justify-self: auto;
+	}
+	#left .author-photo img{
+		width: 32px;
+	}
+	#books-of-year{
+		margin-top: 0;
+	}
+	#left .book-photo{
+		justify-self: auto;
+	}
+	#left .book-photo img{
+		width: 32px;
+	}
+	#left .book-details{
+		grid-template-rows: 1fr 1fr;
+	}
+	#left .book-name{
+		font-size: 12px;
+	}
+	#left .book-author{
+		align-self: center;
 	}
 }

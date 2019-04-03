@@ -1,0 +1,117 @@
+@media (min-width: 300px){
+	a:visited, a:link{
+		color: #000;
+    }
+    #left{
+        margin-top: 50px;
+    }
+	#content-right{
+        grid-template-areas: "heading" "photo" "desc" "cart-link";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.4fr 0.1fr;
+		display: grid;
+    }
+    #content-right .book-heading{
+        display: grid;
+        grid-template-rows: 0.5fr 0.3fr;
+        margin-left: 2%;
+    }
+    #content-right .book-heading .book-name{
+		font-size: 18px;
+	}
+	#content-right .book-heading .book-author{
+		font-size: 12px;
+		color: #777;
+	}
+	#content-right .book-photo-container{
+		grid-area: photo;
+		margin: 25px 0 0 10px;
+		text-align: center;
+	}
+	#content-right .book-photo-container img{
+		width: 150px;
+		box-shadow: 5px 3px 35px -12px;
+	}
+	#content-right .book-desc{
+        grid-area: desc;
+		line-height: 20px;
+		font-size: 12px;
+		text-align: justify;
+		margin: 30px 2% 0 2%;
+        color: #333;
+	}
+	#content-right .book-link{
+		grid-area: cart-link;
+        justify-self: center;
+        margin-top: 30px;
+	}
+	#content-right .book-link i{
+		font-size: 18px;
+		margin-right: 7px;
+	}
+	#content-right .book-link button{
+		background: #fff;
+		border-radius: 20px;
+		display: inline-block;
+		text-decoration: none;
+		color: #333;
+        padding: 10px 30px;
+        border: none;
+		cursor: pointer;
+		outline: none;
+	}
+}
+
+@media (min-width: 566px){
+    #content-right{
+        grid-template-areas: "heading ." "photo desc" ". cart-link";
+        grid-template-rows: 0.2fr 0.4fr 0.1fr;
+        margin-right: 2%;
+        grid-template-columns: 230px 2fr;
+    }
+    #content-right .book-photo-container{
+        margin: 25px 0 0 0;
+    }
+    #content-right .book-heading .book-name{
+		font-size: 22px;
+	}
+	#content-right .book-heading .book-author{
+		font-size: 14px;
+	}
+    #content-right .book-desc{
+		line-height: 24px;
+		font-size: 14px;
+        margin: 10px 0 0 0;
+    }
+    #content-right .book-desc h3{
+        font-size: 16px;
+    }
+    #content-right .book-link{
+        justify-self: right;
+    }
+    #content-right .book-link i{
+        font-size: 20px;
+    }
+    #content-right .book-link span{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 821px){
+    #content-right{
+        margin-right: 4%;
+        grid-template-columns: 275px 2fr;
+    }
+    #content-right .book-photo-container img{
+		width: 175px;
+    }
+}
+	
+@media (min-width: 1200px){
+    #content-right .book-desc{
+		margin: 20px 20% 0 6%;
+    }
+    #content-right .book-link{
+        margin-right: 20%;
+    }
+}
