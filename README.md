@@ -1,6 +1,6 @@
 # estore
 
-Bookit is an online e-book store. It'll be continously updated, so this is not a complete project.
+Bookit is an online e-book store.
 
 Please view the website in <a href="https://msetijo.github.io/estore/"><b>here</b></a>
 
