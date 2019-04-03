@@ -1,5 +1,5 @@
 @media (min-width: 300px){
-	a:visited{
+	a:visited, a:link{
 		color: #000;
 	}
 	#slideshow .slide{
@@ -38,6 +38,8 @@
 		-webkit-line-clamp: 1;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
+		line-height: 20px;
+		max-height: 20px;
 	}
 	#slideshow .slide-book-author{
 		align-self: start;
@@ -61,67 +63,6 @@
 		text-decoration: none;
 		background: #fff;
 		border-radius: 20px;
-	}
-	#wrapper{
-		display : grid;
-		grid-template-areas: "right" "left";
-		grid-template-columns: auto;
-		padding: 0 3%;
-	}
-	#left{
-		display:grid;
-		grid-template-rows: auto;
-		grid-area: left;
-	}
-	#featured-authors{
-		margin-top: 40px;
-	}
-	#left #author-label, #left #book-label{
-		font-weight: 400;
-		font-size: 17px;
-		margin: 20px 0 30px 5%;
-	}
-	#left .author{
-		grid-template-columns: 1fr 3fr;
-		font-size: 12px;
-		color: #738797;
-		display: grid;
-		padding: 0 0 15px;
-	}
-	#left .author-photo{
-		justify-self: center;
-	}
-	#left .author-photo img{
-		width: 50px;
-	}
-	#left .author-name{
-		align-self: center;
-	}
-	#books-of-year{
-		margin-top: 30px;
-	}
-	#left .book{
-		grid-template-columns: 1fr 3fr;
-		display: grid;
-		padding: 0 0 15px;
-	}
-	#left .book-photo{
-		justify-self: center;
-	}
-	#left .book-photo img{
-		width: 50px;
-	}
-	#left .book-details{
-		display: grid;
-		grid-template-rows: 1fr 1fr;
-		margin-right: 12%;
-	}
-	#left .book-name{
-		align-self: center;
-	}
-	#left .book-author{
-		font-size: 11px;
-		color: #738797;
 	}
 	#top-right{
 		border-bottom: 1px solid #e6eaed;
@@ -197,6 +138,14 @@
 		-webkit-line-clamp: 1;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
+		line-height: 20px;
+		max-height: 20px;
+	}
+	#content-right .book-box .book-box-name a{
+		text-decoration: none;
+	}
+	#content-right .book-box .book-box-name a:hover{
+		color: #56d0e9;
 	}
 	#content-right .book-box .book-box-author{
 		align-self: center;
@@ -207,9 +156,15 @@
 		align-self: center;
 		line-height: 20px;
 		font-size: 11.5px;
-		word-break: break-all;
+		text-align: justify;
 		margin-right: 10%;
 		color: #333;
+		max-height: 80px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 4;
 	}
 	#content-right .book-box .book-box-link{
 		grid-area: link;
@@ -220,13 +175,16 @@
 		font-size: 18px;
 		margin-right: 7px;
 	}
-	#content-right .book-box .book-box-link a{
+	#content-right .book-box .book-box-link button{
 		background: #f2f5f7;
 		border-radius: 20px;
 		display: inline-block;
 		text-decoration: none;
 		color: #333;
 		padding: 10px 30px;
+		border: none;
+		cursor: pointer;
+		outline: none;
 	}
 	
 }
@@ -240,18 +198,11 @@
 		width: 125px;
 		margin: 25px 0 0 15px;
 	}
-	#left .author{
-		font-size: 14px;
-		grid-template-columns: 1fr 4fr;
+	#top-right ul{
+		grid-template-columns: repeat( 4, 0.25fr );
 	}
-	#left .book{
-		grid-template-columns: 1fr 4fr;
-	}
-	#left .book-photo img{
-		width: 70px;
-	}
-	#left .book-details{
-		font-size: 14px;
+	#top-right nav li{
+		justify-self: auto;
 	}
 	#content-right{
 		grid-template-columns: repeat(2,1fr);
@@ -272,6 +223,10 @@
 		margin: 20px 10px 0 10px;
 		grid-template-rows: 0.3fr 0.3fr 1fr;
 	}
+	#content-right .book-box .book-box-desc{
+		max-height: 60px;
+		-webkit-line-clamp: 3;
+	}
 }
 
 @media (min-width: 821px){
@@ -288,6 +243,23 @@
 		padding-bottom: 24px;
 		background-color: unset;
 		text-decoration: none;
+	}
+	#content-right .book-box{
+		grid-template-rows: 1fr 1fr 0.8fr;
+	}
+	#content-right .book-box .book-box-photo img{
+		width: 120px;
+	}
+	#content-right .book-box .book-box-author{
+		font-size: 12px;
+	}
+	#content-right .book-box .book-box-desc{
+		max-height: 80px;
+		-webkit-line-clamp: 4;
+	}
+	#content-right .book-box .book-box-link{
+		align-self: auto;
+		margin-top: 12px;
 	}
 }
 	
@@ -318,45 +290,6 @@
 	#slideshow .slide-book-link a{
 		padding: 10px 50px;
 	}
-	#wrapper{
-		grid-template-columns: 1fr 5fr;
-	}
-	#left{
-		grid-area: unset;
-	}
-	#featured-authors{
-		margin: 0;
-	}
-	#left #author-label, #left #book-label{
-		margin: 20px 0 25px;
-	}
-	#left .author-photo{
-		justify-self: auto;
-	}
-	#left .author-photo img{
-		width: 32px;
-	}
-	#left .author-name{
-		align-self: center;
-	}
-	#books-of-year{
-		margin-top: 0;
-	}
-	#left .book-photo{
-		justify-self: auto;
-	}
-	#left .book-photo img{
-		width: 32px;
-	}
-	#left .book-details{
-		grid-template-rows: 1fr 1fr;
-	}
-	#left .book-name{
-		font-size: 12px;
-	}
-	#left .book-author{
-		align-self: center;
-	}
 	#top-right{
 		grid-template-columns: 1fr 3fr;
 	}
@@ -381,6 +314,6 @@
 		margin: 0;
 	}
 	#content-right .book-box .book-box-photo img{
-		width: 77%;
+		width: 88%;
 	}
 }
